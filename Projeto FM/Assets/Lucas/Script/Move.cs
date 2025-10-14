@@ -9,7 +9,7 @@ public class Move : MonoBehaviour
     public bool mensag = false; // qualquer mensagem no jogo
 
     private bool arrastando = false; // marca se esta a arrastando o pastel
-    private Vector3D deslocamento; // captura o deslocamento do mouse
+    private Vector3 deslocamento; // captura o deslocamento do mouse
 
     private bool naFrigideira = false; // verifica se o pastel esta na frigideira
     private Transform frigideiraPosition; // trazer a posicao da frigideira
