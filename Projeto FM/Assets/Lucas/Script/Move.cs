@@ -21,5 +21,25 @@ public class Move : MonoBehaviour
     private Rigidbody2D rb; // objeto Rigidbody
     private bool entregue = false; // verificar se foi entregue
 
+    // Awake e chamado quando o objeto e instanciado
+    void Awake()
+    // pegamos o Rigidbody2D anexado a este GameObject (se existir)
+    {
+        rb = GetComponent<Rigidbody2D>();
+
+    }
+
+    void OnMouseDown()
+    {
+        if (fritando)
+        {
+            if (mensag)
+            {
+                Debug.Log("Nao pode pegar: pastel esta fritando");
+                return;
+            }
+        }
+        Vector3 mousePosition = Camera.main.ScreentoWorldPoint(Input.mousePosition);
+    }
 
 }
