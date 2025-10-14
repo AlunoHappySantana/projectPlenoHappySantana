@@ -12,7 +12,7 @@ public class prepara : MonoBehaviour
 
     private bool arrastando = false; //marca se esta arrastando o pastel 
 
-    private Vector3D deslocamento; //capitura o deslocamento do mouse
+    private Vector3 deslocamento; //capitura o deslocamento do mouse
 
     private bool nafrigideira = false; //verifica se o pastel esta na frigideira
 
@@ -24,7 +24,7 @@ public class prepara : MonoBehaviour
 
     private float contTempo = 0f; //contar o tempo do pastel na frigideira 
 
-    private Rigidibody2D rb; //obj Rigidbody
+    private Rigidbody2D rb; //obj Rigidbody
 
     private bool entregue = false; //vereificar se foi entregue
 
