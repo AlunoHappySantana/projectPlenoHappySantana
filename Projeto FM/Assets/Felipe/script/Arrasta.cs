@@ -9,7 +9,7 @@ public class arrasta : MonoBehaviour
     public bool mensag = false; //mensagem dentro do jogo
 
     private bool arrastando = false; // marca q o pastel ta sendo arrastado
-    private Vector3D deslocamento; //capta q o mause esta se mexendo
+    private Vector3 deslocamento; //capta q o mause esta se mexendo
 
     private bool naFrigideira = false;//ve se o pastel ta na frigideira
     private Transform frigideiraPosition;//pegar a posição da frigideira
@@ -18,7 +18,7 @@ public class arrasta : MonoBehaviour
     private bool pronto = false;//verificar se esta bom
     private float contTempo = 0f;//contar tempo de pastel na frigideira 
 
-    private rigidBody2D rb;//obj rigidBody
+    private RigidBody2D rb;//obj rigidBody
     private bool entregue = false;//verificar se foi entregue
 
 
