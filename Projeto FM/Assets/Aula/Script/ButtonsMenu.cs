@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ButtonsMenu : MonoBehaviour
 {
 
-    public void GamePlay()
+    public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
+         SceneManager.LoadSceneAsync(1);
     }
-    
+
+
+
 }
