@@ -200,8 +200,8 @@ Transform:
   m_GameObject: {fileID: 482347153}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.7, y: -0.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 442, y: 137, z: 0}
+  m_LocalScale: {x: 45.050243, y: -43.511417, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -267,7 +267,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 221.78401
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -292,8 +292,8 @@ Transform:
   m_GameObject: {fileID: 766074338}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 499.9691, y: 173.8, z: -10}
+  m_LocalScale: {x: 26.96361, y: 85.12206, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
