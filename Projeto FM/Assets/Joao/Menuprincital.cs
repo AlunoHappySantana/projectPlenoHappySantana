@@ -4,16 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menuprincital : MonoBehaviour {
-
-
-
     public void PlayButton()
     {
 
 
     SceneManager.LoadSceneAsync(1);
 
-    
 }
 
     }
