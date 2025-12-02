@@ -50,12 +50,13 @@ transform.position = new Vector3 (posMouse.x, posMouse.y, transform.position.z) 
     void OnMouseUp()
     {
         arrastando = false;
+        VoltaParaInicio();
     }
 
-void OnMouseUp()
+    // volta para a posição inicial
+    public void VoltaParaInicio()
     {
-        
+        transform.position = posicaoInicial;
     }
-
 
 } 
