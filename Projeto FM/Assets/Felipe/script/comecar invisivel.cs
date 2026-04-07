@@ -14,6 +14,5 @@ public class ToggleVisibilityOnCollision : MonoBehaviour
         // Começa invisível
         sr.enabled = false;
     }
-
-  
+ 
 }

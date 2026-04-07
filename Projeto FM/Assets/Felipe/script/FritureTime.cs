@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 public class MouseArrasta : MonoBehaviour
 { // === Configurações visíveis no Inspector ===
@@ -23,7 +21,7 @@ public class MouseArrasta : MonoBehaviour
 
     private bool fritando = false;    // true enquanto está fritando
     private bool retirar = false;      // true quando a fritura terminou (pronto para retirar)
-    private float tempoFritura = 0f;          // contador de tempo enquanto frita
+private float tempoFritura = 0f;          // contador de tempo enquanto frita
 
 
     private Rigidbody2D rb;            // referência ao Rigidbody2D do pastel
@@ -51,7 +49,7 @@ public class MouseArrasta : MonoBehaviour
 
 
     // OnMouseDown é chamado quando o jogador pressiona o botão do mouse sobre o Collider do objeto
-    void OnMouseDown()
+ void OnMouseDown()
     {
         // Se já estiver fritando, não deixamos pegar o pastel (regra do jogo)
         if (fritando)
@@ -234,4 +232,5 @@ public class MouseArrasta : MonoBehaviour
         // Destroy(gameObject, 1f);
     }
 }
+
 
