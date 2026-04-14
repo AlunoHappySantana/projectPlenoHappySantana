@@ -1,26 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class criente_vino : MonoBehaviour
-{
-    public Animator anim;
-    bool podevim = false;
-
-    void Start()
-    {
-        
+public class criente_vino : MonoBehaviour {
+public float tempo = 3f; 
+public GameObject criente;
+void Start () {
+    criente.SetActive(false);
+    Invoke("Aparecer", tempo);
+    }
+    void Aparecer () {
+        criente.SetActive(true);
     }
 
-    void Update()
-    {
-        if (podevim == true)
-        {
-            anim.Play("cliente entrando");
-        }
-        else
-        {
-            anim.Play("cliente parado");
-        }
-    }
 }
