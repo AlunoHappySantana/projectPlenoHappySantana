@@ -10,6 +10,7 @@ TagManager:
   - Frigideira
   - Pastel
   - Entrega
+  - pontoFritar
   layers:
   - Default
   - TransparentFX

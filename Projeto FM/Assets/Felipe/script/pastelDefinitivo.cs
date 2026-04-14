@@ -57,7 +57,7 @@ public class TrocaSprite : MonoBehaviour
 
         if (collision.CompareTag("pontoFritar"))
         {
-            SceneManager.LoadScene("Fritando");
+            SceneManager.LoadScene("sala de fritura");
         }
     }
 
