@@ -5,11 +5,12 @@ using UnityEngine;
 public class Desistir : MonoBehaviour
 {
     public GameObject button;
+    public float tempoParaAparecer = 3f;
     // Start is called before the first frame update
     void Start()
     {
         button.SetActive(false);
-        Invoke("Desista", 10f);
+        Invoke("Desista", tempoParaAparecer);
 
         
     }
