@@ -3,37 +3,56 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PersistênciaObjeto : MonoBehaviour
+public class PersistenciaObjeto : MonoBehaviour
 {
-    private static PersistênciaObjeto instancia;
+    // Instância estática que será acessada por outros scripts se necessário
+    public static PersistenciaObjeto instancia;
 
     void Awake()
     {
-        // Verifica se o objeto tem a tag correta
-        if (gameObject.CompareTag("pastel"))
+        // Verifica se já existe uma instância deste objeto
+        if (instancia == null)
         {
-            // Sistema de Singleton para evitar duplicatas ao voltar para a cena inicial
-            if (instancia == null)
-            {
-                instancia = this;
-                // Comando principal: impede que o objeto seja deletado na troca de cena
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                // Se já existir um "pastel" persistente, deleta a cópia nova
-                Destroy(gameObject);
-            }
+            instancia = this;
+            
+            // Verifica se o objeto é um objeto de topo (raiz). 
+            // DontDestroyOnLoad só funciona em objetos que não têm "pai".
+            transform.SetParent(null); 
+            
+            DontDestroyOnLoad(gameObject);
         }
-        else
+        else if (instancia != this)
         {
-            Debug.LogWarning("O objeto " + gameObject.name + " não tem a tag 'pastel'!");
+            // Se já existir uma instância e não for esta, destrói a duplicata
+            Debug.Log("Duplicata de " + gameObject.name + " destruída.");
+            Destroy(gameObject);
         }
     }
 
-    // Exemplo de método para carregar a próxima cena
-    public void MudarDeCena(string nomeDaCena)
+    // Método para mudar de cena
+   private void OnTriggerEnter2D(Collider2D Banana)
+   {
+    if (Banana.CompareTag("Ingrediente"))
+        {
+            TrocarImagem();
+            Destroy(Banana.gameObject);
+        }
+
+        if (Banana.CompareTag("pontoFritar"))
+        {
+            SceneManager.LoadScene("SalaDeFritura");
+        }
+   }
+
+public Sprite PastelCru;
+
+private SpriteRenderer spriteRenderer;
+   void TrocarImagem()
     {
-        SceneManager.LoadScene(nomeDaCena);
+        if (PastelCru != null)
+        {
+            spriteRenderer.sprite = PastelCru;
+        }
     }
+   
 }
