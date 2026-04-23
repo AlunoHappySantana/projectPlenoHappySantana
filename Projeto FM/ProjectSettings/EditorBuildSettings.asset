@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Joao/Scene.unity
     guid: e76c8834eeec8c645b3ae2e06c79b8e1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Joao/Menu.unity
     guid: 1c298e8d3906df9489a646e2e77f1270
   - enabled: 1
