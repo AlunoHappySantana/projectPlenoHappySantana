@@ -5,13 +5,13 @@ using UnityEngine;
 public class pegar : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start();
+    void Start(){}
 
     public float frituTimer = 5f;
 
     public bool mensag = false;
     private bool arrastando = false;
-    private Vector3D deslocamento;
+    private Vector3 deslocamento;
     private bool naFrigideira = false;
     private Transform frigideiraPosition;
     private bool fritando = false;
@@ -20,7 +20,7 @@ public class pegar : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool entregue = false;
-
+    
     void Awake() //awake é chamado quandoo o objetivo é instanciadl
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,11 +33,11 @@ public class pegar : MonoBehaviour
         {
             if (mensag)
             {
-                Debug.log("Nao pode pegar o pastel bobao");
+                Debug.Log("Nao pode pegar o pastel bobao");
                  return;
             } 
         }
-        Vector3D mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
 }
