@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    public float frituTimer = 15f; //tempo de fritura
+    /*public float frituTimer = 15f; //tempo de fritura
 
     public bool mensag = false; // qualquer mensagem no jogo
 
@@ -20,6 +20,6 @@ public class Move : MonoBehaviour
 
     private Rigidbody2D rb; // objeto Rigidbody
     private bool entregue = false; // verificar se foi entregue
-
+*/
 
 }
