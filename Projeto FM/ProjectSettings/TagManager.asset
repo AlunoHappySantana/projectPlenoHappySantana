@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Massa
   - Ingrediente
+  - banca
+  - cliente
   layers:
   - Default
   - TransparentFX

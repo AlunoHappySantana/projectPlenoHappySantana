@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 391773262}
   m_Layer: 0
   m_Name: criente
-  m_TagString: Untagged
+  m_TagString: cliente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 1443626653}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: banca
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -456,7 +456,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8930817, g: 0.05897697, b: 0.05897697, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -475,8 +475,8 @@ Transform:
   m_GameObject: {fileID: 1443626650}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.3037, y: 0.025, z: 0}
-  m_LocalScale: {x: 3.086827, y: 2.8863444, z: 1.3112}
+  m_LocalPosition: {x: -7.7317, y: 0.025, z: 0}
+  m_LocalScale: {x: 6.230813, y: 2.8863444, z: 1.3112}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -488,59 +488,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443626650}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2309be82e3483c4da4751aa869c10f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1952741973
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1952741975}
-  - component: {fileID: 1952741974}
-  m_Layer: 0
-  m_Name: criente2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1952741974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952741973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cf6c361649ce6b4bb9202521221fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pastel: 0
-  tempo: 3
-  criente: {fileID: 391773261}
-  textoPastel: {fileID: 0}
---- !u!4 &1952741975
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952741973}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.098248, y: 0.62841344, z: -0.040642306}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2064064406
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2064064407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,7 +744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pastel: 0
   tempo: 3
-  criente: {fileID: 1952741973}
+  criente: {fileID: 0}
   textoPastel: {fileID: 2099124062}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -801,6 +753,5 @@ SceneRoots:
   - {fileID: 79513573}
   - {fileID: 1443626652}
   - {fileID: 391773265}
-  - {fileID: 1952741975}
   - {fileID: 2064064410}
   - {fileID: 358000376}
