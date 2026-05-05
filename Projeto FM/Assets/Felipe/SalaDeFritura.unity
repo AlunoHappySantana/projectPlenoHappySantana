@@ -193,7 +193,11 @@ SpriteRenderer:
   m_Size: {x: 1.06, y: 1.29}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &116355081
@@ -223,6 +227,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed98120cb99d2a945a84a3ad43a7c1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  diferencaMouse: {x: 0, y: 0, z: 0}
+  arrastando: 0
+  posicaoInicial: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!50 &116355083
 Rigidbody2D:
   serializedVersion: 4
@@ -309,6 +319,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo_cozimento: 20
   Mensagem: 1
+<<<<<<< Updated upstream
+=======
+  arrastando: 0
+  deslocamento: {x: 0, y: 0, z: 0}
+  EstaNaPanela: 0
+  FrigideiraTransform: {fileID: 0}
+  fritando: 0
+  retirar: 0
+  tempoFritura: 0
+  rb: {fileID: 0}
+  pronto: 0
+  entregue: 0
+>>>>>>> Stashed changes
 --- !u!114 &116355086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,6 +345,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pastelCozido: {fileID: 21300000, guid: a8aacef91fbaa1648b7ead9b7109c4c9, type: 3}
+<<<<<<< Updated upstream
+=======
+  spriteRenderer: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1 &220650855
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +420,11 @@ SpriteRenderer:
   m_Size: {x: 2.98, y: 0.69}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &220650857
@@ -423,6 +454,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de78891625860664caa607ef1cf58147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  sr: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!114 &220650859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,6 +472,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo_cozimento: 120
   Mensagem: 1
+<<<<<<< Updated upstream
+=======
+  arrastando: 0
+  deslocamento: {x: 0, y: 0, z: 0}
+  EstaNaPanela: 0
+  FrigideiraTransform: {fileID: 0}
+  fritando: 0
+  retirar: 0
+  tempoFritura: 0
+  rb: {fileID: 0}
+  pronto: 0
+  entregue: 0
+>>>>>>> Stashed changes
 --- !u!50 &220650860
 Rigidbody2D:
   serializedVersion: 4
@@ -521,6 +569,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1327666a213f814a95f8255dc95b776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  spriteRenderer: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,7 +732,11 @@ SpriteRenderer:
   m_Size: {x: 1.15, y: 1.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1900808013
@@ -710,6 +766,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de78891625860664caa607ef1cf58147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  sr: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1 &1965507553
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +836,11 @@ SpriteRenderer:
   m_Size: {x: 7.63, y: 3.53}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1965507555
@@ -863,7 +927,11 @@ SpriteRenderer:
   m_Size: {x: 1.28, y: 3.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1976940791
@@ -893,6 +961,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed98120cb99d2a945a84a3ad43a7c1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  diferencaMouse: {x: 0, y: 0, z: 0}
+  arrastando: 0
+  posicaoInicial: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!61 &1976940793
 BoxCollider2D:
   m_ObjectHideFlags: 0
