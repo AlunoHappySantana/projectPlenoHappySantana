@@ -6,9 +6,9 @@ public class pegar : MonoBehaviour
 {
     // Start is called before the first frame update
 //<<<<<<< HEAD
-    void Start();
+
 //=======
-    void Start(){}
+    
 //>>>>>> 6d285ccd689f460f9719968106c35d71712ed90c
 
     public float frituTimer = 5f;
@@ -16,7 +16,7 @@ public class pegar : MonoBehaviour
     public bool mensag = false;
     private bool arrastando = false;
 //<<<<<<< HEAD
-    private Vector3D deslocamento;
+  
 //=======
     private Vector3 deslocamento;
 //>>>>>> 6d285ccd689f460f9719968106c35d71712ed90c
