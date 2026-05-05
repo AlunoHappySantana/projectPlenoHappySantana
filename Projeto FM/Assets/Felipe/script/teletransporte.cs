@@ -41,9 +41,6 @@ public class PersistenciaObjeto : MonoBehaviour
         if (Banana.CompareTag("pontoFritar"))
         {
             SceneManager.LoadScene("SalaDeFritura");
-            Destroy(Banana); 
-          
-            
         }
    }
 
