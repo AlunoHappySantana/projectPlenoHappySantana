@@ -19,7 +19,8 @@ public class PersistenciaObjeto : MonoBehaviour
             // DontDestroyOnLoad só funciona em objetos que não têm "pai".
             transform.SetParent(null); 
             
-            DontDestroyOnLoad(gameObject);
+            
+            
         }
         else if (instancia != this)
         {
