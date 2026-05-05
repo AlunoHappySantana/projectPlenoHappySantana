@@ -440,6 +440,8 @@ GameObject:
   - component: {fileID: 890937480}
   - component: {fileID: 890937479}
   - component: {fileID: 890937478}
+  - component: {fileID: 890937481}
+  - component: {fileID: 890937482}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -521,6 +523,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &890937481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890937477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b31af448e76414d8e1c141577fd341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &890937482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890937477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32138bc117e47674ba56ebed092c9a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &933033771
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +809,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1431487786}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 890937481}
+        m_TargetAssemblyTypeName: VoltarMenu, Assembly-CSharp
+        m_MethodName: Voltar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1431487786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,7 +1151,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2097602360}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 890937482}
+        m_TargetAssemblyTypeName: desisti, Assembly-CSharp
+        m_MethodName: Acabou
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2097602360
 MonoBehaviour:
   m_ObjectHideFlags: 0
