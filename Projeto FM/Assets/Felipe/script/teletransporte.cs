@@ -3,56 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PersistenciaObjeto : MonoBehaviour
+public class PersistênciaObjeto : MonoBehaviour
 {
-    // Instância estática que será acessada por outros scripts se necessário
-    public static PersistenciaObjeto instancia;
+    private static PersistênciaObjeto instancia;
 
     void Awake()
     {
-        // Verifica se já existe uma instância deste objeto
-        if (instancia == null)
+        // Verifica se o objeto tem a tag correta
+        if (gameObject.CompareTag("pastel"))
         {
-            instancia = this;
-            
-            // Verifica se o objeto é um objeto de topo (raiz). 
-            // DontDestroyOnLoad só funciona em objetos que não têm "pai".
-            transform.SetParent(null); 
-            
-            DontDestroyOnLoad(gameObject);
+            // Sistema de Singleton para evitar duplicatas ao voltar para a cena inicial
+            if (instancia == null)
+            {
+                instancia = this;
+                // Comando principal: impede que o objeto seja deletado na troca de cena
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                // Se já existir um "pastel" persistente, deleta a cópia nova
+                Destroy(gameObject);
+            }
         }
-        else if (instancia != this)
+        else
         {
-            // Se já existir uma instância e não for esta, destrói a duplicata
-            Debug.Log("Duplicata de " + gameObject.name + " destruída.");
-            Destroy(gameObject);
+            Debug.LogWarning("O objeto " + gameObject.name + " não tem a tag 'pastel'!");
         }
     }
 
-    // Método para mudar de cena
-   private void OnTriggerEnter2D(Collider2D Banana)
-   {
-    if (Banana.CompareTag("Ingrediente"))
-        {
-            TrocarImagem();
-            Destroy(Banana.gameObject);
-        }
-
-        if (Banana.CompareTag("pontoFritar"))
-        {
-            SceneManager.LoadScene("SalaDeFritura");
-        }
-   }
-
-public Sprite PastelCru;
-
-private SpriteRenderer spriteRenderer;
-   void TrocarImagem()
+    // Exemplo de método para carregar a próxima cena
+    public void MudarDeCena(string nomeDaCena)
     {
-        if (PastelCru != null)
-        {
-            spriteRenderer.sprite = PastelCru;
-        }
+        SceneManager.LoadScene(nomeDaCena);
     }
-   
 }
